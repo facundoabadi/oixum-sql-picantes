@@ -1,0 +1,22 @@
+<h1>Oixum SQL</h1>
+
+<form method="post" action="/">
+  <textarea name="query"  rows="4" cols="30">{{ text }}</textarea><br />
+  <input type="submit" />
+</form>
+
+{{#if resultados}}
+<h3>Resultados</h3>
+<code>{{ resultados }}</code>
+{{/if}}
+
+
+{{#if columnas}}
+<h3>Columnas</h3>
+{{ columnas }}
+{{/if}}
+
+{{#if error}}
+<h3>Error</h3>
+{{ error }}
+{{/if}}
